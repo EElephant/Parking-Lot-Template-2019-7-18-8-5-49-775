@@ -49,6 +49,14 @@ public class ParkingLot {
         this.position = position;
     }
 
+    public boolean isFull(){
+        return position<0;
+    }
+
+    public int reducePosition(){
+        return position--;
+    }
+
     @Override
     public String toString() {
         return "ParkingLot{" +

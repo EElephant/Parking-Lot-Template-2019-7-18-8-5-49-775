@@ -1,12 +1,12 @@
 package com.thoughtworks.parking_lot.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
+@Table(name = "PARKING_ORDER")
 public class Order {
     @Id
     @GeneratedValue
@@ -16,10 +16,12 @@ public class Order {
     @Column
     private String carNumber;
     @Column(nullable = true)
+    @DateTimeFormat(style = "yyyy-MM-dd HH:mm:ss")
     private Date startTime;
+    @DateTimeFormat(style = "yyyy-MM-dd HH:mm:ss")
     @Column(nullable = true)
     private Date endTime;
-    @Column(columnDefinition = "open")
+    @Column
     private Boolean orderStatus;
 
     public Order() {
