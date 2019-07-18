@@ -19,13 +19,14 @@ public class Story1Test {
 
     @Test
     public void should_return_specific_parking_lot_when_call_get_specific_parking_lot_by_name_given_name(){
+        //given
         ParkingLot parkingLot1 = new ParkingLot("1",1,1);
         ParkingLot parkingLot2 = new ParkingLot("2",1,1);
+        //when
         parkingLotRepository.save(parkingLot1);
         parkingLotRepository.save(parkingLot2);
-
         ParkingLot parkingLot = parkingLotRepository.findByName("1");
-
+        //then
         assertEquals(parkingLot1.toString(),parkingLot.toString());
     }
 }

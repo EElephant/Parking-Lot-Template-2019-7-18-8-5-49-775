@@ -32,4 +32,9 @@ public class ParkingLotController {
     public ParkingLot getSpecificParkingLotByName(@PathVariable String name){
         return parkingLotService.getSpecificParkingLotByName(name);
     }
+
+    @PutMapping
+    public void updateSpecificParkingLotCapacityByName(@RequestBody ParkingLot parkingLot){
+        parkingLotService.updateSpecificParkingLotCapacityByName(parkingLot);
+    }
 }

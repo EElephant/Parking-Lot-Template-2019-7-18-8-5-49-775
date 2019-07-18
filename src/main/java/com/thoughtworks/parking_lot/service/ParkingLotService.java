@@ -28,4 +28,10 @@ public class ParkingLotService {
     public ParkingLot getSpecificParkingLotByName(String name) {
         return parkingLotRepository.findByName(name);
     }
+
+    public void updateSpecificParkingLotCapacityByName(ParkingLot parkingLot) {
+        ParkingLot targetParkingLot = parkingLotRepository.findByName(parkingLot.getName());
+        targetParkingLot.setCapacity(parkingLot.getCapacity());
+        parkingLotRepository.saveAndFlush(targetParkingLot);
+    }
 }
