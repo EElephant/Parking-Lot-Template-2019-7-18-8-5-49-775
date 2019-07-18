@@ -6160,3 +6160,53 @@ java.lang.NullPointerException: null
 2019-07-18 23:17:17.604 DEBUG 73492 --- [http-nio-8555-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
 2019-07-18 23:17:17.604 DEBUG 73492 --- [http-nio-8555-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["this parkingLot is full!!!"]
 2019-07-18 23:17:17.606 DEBUG 73492 --- [http-nio-8555-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-18 23:38:40.601  INFO 84200 --- [main] c.t.parking_lot.ParkingLotApplication    : Starting ParkingLotApplication on ZHA-ITA129-W10 with PID 84200 (D:\GitRepository\Parking-Lot-Template-2019-7-18-8-5-49-775\out\production\classes started by HUANGET2 in D:\GitRepository\Parking-Lot-Template-2019-7-18-8-5-49-775)
+2019-07-18 23:38:40.607  INFO 84200 --- [main] c.t.parking_lot.ParkingLotApplication    : No active profile set, falling back to default profiles: default
+2019-07-18 23:38:41.715  INFO 84200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-18 23:38:41.782  INFO 84200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58ms. Found 2 repository interfaces.
+2019-07-18 23:38:42.214  INFO 84200 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cad7cc80] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-18 23:38:42.775  INFO 84200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8555 (http)
+2019-07-18 23:38:42.798  INFO 84200 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-18 23:38:42.798  INFO 84200 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-18 23:38:42.986  INFO 84200 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-18 23:38:42.986 DEBUG 84200 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-07-18 23:38:42.986  INFO 84200 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2311 ms
+2019-07-18 23:38:43.465  INFO 84200 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-18 23:38:43.725  INFO 84200 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-18 23:38:44.907  INFO 84200 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-18 23:38:45.447 DEBUG 84200 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-07-18 23:38:45.581  INFO 84200 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-18 23:38:45.589 DEBUG 84200 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-07-18 23:38:45.627  WARN 84200 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-18 23:38:45.661 DEBUG 84200 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2019-07-18 23:38:45.671 DEBUG 84200 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-07-18 23:38:45.679 DEBUG 84200 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-07-18 23:38:45.942  INFO 84200 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-07-18 23:38:46.012  INFO 84200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8555 (http) with context path ''
+2019-07-18 23:38:46.014  INFO 84200 --- [main] c.t.parking_lot.ParkingLotApplication    : Started ParkingLotApplication in 5.867 seconds (JVM running for 6.361)
+2019-07-18 23:38:52.474  INFO 84200 --- [http-nio-8555-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-18 23:38:52.475  INFO 84200 --- [http-nio-8555-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-18 23:38:52.475 DEBUG 84200 --- [http-nio-8555-exec-5] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-07-18 23:38:52.490 DEBUG 84200 --- [http-nio-8555-exec-5] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-07-18 23:38:52.490  INFO 84200 --- [http-nio-8555-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-07-18 23:38:52.493 DEBUG 84200 --- [http-nio-8555-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2019-07-18 23:38:52.496 DEBUG 84200 --- [http-nio-8555-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-07-18 23:38:52.503 DEBUG 84200 --- [http-nio-8555-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2019-07-18 23:39:11.263 DEBUG 84200 --- [http-nio-8555-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/order", parameters={}
+2019-07-18 23:39:11.265 DEBUG 84200 --- [http-nio-8555-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.thoughtworks.parking_lot.controller.OrderController.addOrder(com.thoughtworks.parking_lot.entity.Order)
+2019-07-18 23:39:11.333 DEBUG 84200 --- [http-nio-8555-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.thoughtworks.parking_lot.entity.Order@50176a1c]
+2019-07-18 23:39:11.537 DEBUG 84200 --- [http-nio-8555-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2019-07-18 23:39:11.538 DEBUG 84200 --- [http-nio-8555-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["park car success!!!"]
+2019-07-18 23:39:11.542 DEBUG 84200 --- [http-nio-8555-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-18 23:39:12.479 DEBUG 84200 --- [http-nio-8555-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/order", parameters={}
+2019-07-18 23:39:12.479 DEBUG 84200 --- [http-nio-8555-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.thoughtworks.parking_lot.controller.OrderController.addOrder(com.thoughtworks.parking_lot.entity.Order)
+2019-07-18 23:39:12.480 DEBUG 84200 --- [http-nio-8555-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.thoughtworks.parking_lot.entity.Order@387f42fe]
+2019-07-18 23:39:12.486 DEBUG 84200 --- [http-nio-8555-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2019-07-18 23:39:12.487 DEBUG 84200 --- [http-nio-8555-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["park car success!!!"]
+2019-07-18 23:39:12.488 DEBUG 84200 --- [http-nio-8555-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-07-18 23:39:13.153 DEBUG 84200 --- [http-nio-8555-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/order", parameters={}
+2019-07-18 23:39:13.153 DEBUG 84200 --- [http-nio-8555-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.thoughtworks.parking_lot.controller.OrderController.addOrder(com.thoughtworks.parking_lot.entity.Order)
+2019-07-18 23:39:13.154 DEBUG 84200 --- [http-nio-8555-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.thoughtworks.parking_lot.entity.Order@682f8499]
+2019-07-18 23:39:13.159 DEBUG 84200 --- [http-nio-8555-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2019-07-18 23:39:13.159 DEBUG 84200 --- [http-nio-8555-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["park car success!!!"]
+2019-07-18 23:39:13.160 DEBUG 84200 --- [http-nio-8555-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK

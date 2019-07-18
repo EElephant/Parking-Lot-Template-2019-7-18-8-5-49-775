@@ -32,7 +32,7 @@ public class OrderService {
             return "this parkingLot is full!!!";
         }else {
             orderRepository.save(order);
-            return "";
+            return "park car success!!!";
         }
 
     }
