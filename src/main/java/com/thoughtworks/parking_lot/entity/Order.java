@@ -11,7 +11,7 @@ public class Order {
     @Id
     @GeneratedValue
     private int id;
-    @Column
+    @Column(name = "PARKING_LOG_NAME")
     private String parkingLotName;
     @Column
     private String carNumber;
